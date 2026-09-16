@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Warisan Homestay Ban Pecah</title>
+  <link rel="icon" type="image/png" href="logo homestay.png">
+  
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Base Styling Global -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; color: #1e293b; background-color: #f8fafc; line-height: 1.6; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+    .btn { display: inline-block; padding: 12px 28px; background-color: #0f766e; color: #fff; border: none; border-radius: 12px; font-weight: 600; cursor: pointer; text-decoration: none; transition: 0.2s; }
+    .btn:hover { background-color: #115e59; transform: translateY(-2px); }
+    .heading { font-size: 2.25rem; color: #0f766e; margin-bottom: 0.5rem; text-align: center; }
+    .lead { color: #64748b; margin-bottom: 2rem; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER SECTION ================= -->
+  <style>
+    #header-section { position: sticky; top: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    #header-section .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    #header-section .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.25rem; color: #0f766e; }
+    #header-section .brand img { height: 45px; width: auto; border-radius: 6px; }
+    #header-section .nav { display: flex; gap: 1.5rem; }
+    #header-section .nav a { text-decoration: none; color: #1e293b; font-weight: 500; transition: color 0.2s; }
+    #header-section .nav a:hover { color: #0f766e; }
+    @media (max-width: 768px) { #header-section .nav { display: none; } }
+  </style>
+  <header id="header-section">
+    <div class="container navbar">
+      <div class="brand">
+        <img src="logo homestay.png" alt="Sri Warisan Logo">
+        <span>Sri Warisan Homestay</span>
+      </div>
+      <nav class="nav">
+        <a href="#about-section">Mengenai</a>
+        <a href="#rooms-section">Pilihan Bilik</a>
+        <a href="#gallery-section">Galeri</a>
+        <a href="#attractions-section">Tarikan</a>
+        <a href="#pricing-section">Harga</a>
+        <a href="#contact-section">Hubungi</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <style>
+    #hero-section { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('gallery3.jpg') center/cover no-repeat; color: #ffffff; padding: 120px 0; text-align: center; border-radius: 0 0 24px 24px; }
+    #hero-section .title { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+    #hero-section .sub { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9; }
+    #hero-section .cta { display: flex; gap: 1rem; justify-content: center; }
+    #hero-section .btn-alt { background-color: transparent; border: 2px solid #ffffff; }
+    #hero-section .btn-alt:hover { background-color: #ffffff; color: #1e293b; }
+    @media (max-width: 768px) { #hero-section .title { font-size: 2rem; } }
+  </style>
+  <section id="hero-section">
+    <div class="container">
+      <h1 class="title">Nikmati Ketenangan Tepi Laut</h1>
+      <p class="sub">Homestay di Ban Pecah, Tanjung Piandang — lokasi pertemuan ombak laut dan sawah padi.</p>
+      <div class="cta">
+        <a href="#pricing-section" class="btn">Tempah Sekarang</a>
+        <a href="#about-section" class="btn btn-alt">Maklumat Lanjut</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <style>
+    #about-section { padding: 80px 0; }
+    #about-section .about-box { background: #ffffff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+    #about-section .points { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+    #about-section .point { display: flex; align-items: center; gap: 10px; font-weight: 500; }
+    #about-section .point i { color: #0f766e; }
+    #about-section .about-img { width: 100%; height: 100%; min-height: 250px; object-fit: cover; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+  </style>
+  <section id="about-section">
+    <div class="container grid-2">
+      <div class="about-box">
+        <h2 class="heading" style="text-align: left;">Mengenai Homestay Kami</h2>
+        <p style="color: #64748b; margin-top: 0.5rem;">Terletak berhampiran Ban Pecah, kami menawarkan suasana damai berangin laut serta pemandangan desa yang indah. Sesuai untuk percutian keluarga dan aktiviti santai.</p>
+        <div class="points">
+          <div class="point"><i class="fa-solid fa-circle-check"></i> Suasana kampung tradisional yang menenangkan</div>
+          <div class="point"><i class="fa-solid fa-circle-check"></i> Hanya 5 minit ke pantai Ban Pecah</div>
+          <div class="point"><i class="fa-solid fa-circle-check"></i> Kemudahan fasiliti yang selesa & moden</div>
+        </div>
+      </div>
+      <div>
+        <img src="duarumah.png" alt="Pemandangan Homestay" class="about-img">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= ROOMS SECTION ================= -->
+  <style>
+    #rooms-section { padding: 80px 0; background-color: #ffffff; }
+    #rooms-section .card { background: #f8fafc; border-radius: 12px; padding: 1.5rem; border: 1px solid #e2e8f0; }
+    #rooms-section .card-title { font-size: 1.5rem; color: #0f766e; margin-bottom: 0.5rem; }
+    #rooms-section .meta { font-size: 0.9rem; color: #64748b; margin-bottom: 1rem; }
+    #rooms-section .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+    #rooms-section .pill { background: #ffffff; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; color: #0f766e; border: 1px solid #cbd5e1; }
+  </style>
+  <section id="rooms-section">
+    <div class="container">
+      <h2 class="heading">Jenis Rumah & Kemudahan</h2>
+      <p class="lead">Pilih unit kediaman mengikut keselesaan anda dan keluarga.</p>
+      
+      <div class="grid-2">
+        <div class="card">
+          <h3 class="card-title">Seri Warisan</h3>
+          <div class="meta"><i class="fa-solid fa-house"></i> 2 Tingkat · 3 Bilik Tidur · 3 Katil Queen · Aircond · 2 Bilik Air</div>
+          <p style="color: #475569; font-size: 0.95rem;">Sesuai untuk percutian keluarga besar dengan keselesaan ruang tamu luas.</p>
+          <div class="pills">
+            <span class="pill"><i class="fa-solid fa-wifi"></i> WiFi</span>
+            <span class="pill"><i class="fa-solid fa-tv"></i> TV</span>
+            <span class="pill"><i class="fa-solid fa-square-parking"></i> Parkir</span>
+            <span class="pill"><i class="fa-solid fa-building"></i> Balkoni</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Seri Lagenda</h3>
+          <div class="meta"><i class="fa-solid fa-house"></i> 2 Bilik Tidur · 2 Katil Queen · Aircond · 1 Bilik Air</div>
+          <p style="color: #475569; font-size: 0.95rem;">Sesuai untuk keluarga sederhana yang mengutamakan suasana santai.</p>
+          <div class="pills">
+            <span class="pill"><i class="fa-solid fa-wifi"></i> WiFi</span>
+            <span class="pill"><i class="fa-solid fa-tv"></i> TV</span>
+            <span class="pill"><i class="fa-solid fa-square-parking"></i> Parkir</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= GALLERY SECTION ================= -->
+  <style>
+    #gallery-section { padding: 80px 0; }
+    #gallery-section .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    #gallery-section img { width: 100%; height: 220px; object-fit: cover; border-radius: 12px; transition: transform 0.3s; }
+    #gallery-section img:hover { transform: scale(1.03); }
+  </style>
+  <section id="gallery-section">
+    <div class="container">
+      <h2 class="heading">Galeri Suasana</h2>
+      <p class="lead">Gambaran keindahan homestay dan persekitarannya.</p>
+      <div class="gallery-grid">
+        <img src="viewrumah.jpeg" alt="Pemandangan Homestay">
+        <img src="bilik.jpeg" alt="Bilik Homestay">
+        <img src="sunset.jpeg" alt="Matahari Terbenam Ban Pecah">
+        <img src="ban.jpg" alt="Sawah Padi">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= ATTRACTIONS SECTION ================= -->
+  <style>
+    #attractions-section { padding: 80px 0; background-color: #ffffff; }
+    #attractions-section .icon-box { background: #f8fafc; padding: 2rem; border-radius: 12px; text-align: center; border: 1px solid #e2e8f0; }
+    #attractions-section .icon-box i { font-size: 2.5rem; color: #0f766e; margin-bottom: 1rem; }
+    #attractions-section .icon-box h4 { margin-bottom: 0.5rem; }
+  </style>
+  <section id="attractions-section">
+    <div class="container">
+      <h2 class="heading">Tarikan Berhampiran</h2>
+      <p class="lead">Lokasi menarik sekitar Tanjung Piandang.</p>
+      <div class="grid-3">
+        <div class="icon-box">
+          <i class="fa-solid fa-water"></i>
+          <h4>Ban Pecah</h4>
+          <p style="font-size: 0.9rem; color: #64748b;">Lokasi pantai popular untuk menikmati bayu laut dan pemandangan sunset yang memukau.</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-fish"></i>
+          <h4>Kuala Kurau</h4>
+          <p style="font-size: 0.9rem; color: #64748b;">Perkampungan nelayan unik yang terkenal dengan pelbagai hidangan makanan laut segar.</p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-wheat-awn"></i>
+          <h4>Sawah Padi</h4>
+          <p style="font-size: 0.9rem; color: #64748b;">Pemandangan hijau seluas mata memandang, sesuai untuk sesi fotografi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= PRICING SECTION ================= -->
+  <style>
+    #pricing-section { padding: 80px 0; }
+    #pricing-section .price-card { background: #ffffff; border-radius: 12px; padding: 2rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); text-align: center; border: 1px solid #e2e8f0; }
+    #pricing-section .price-tag { font-size: 2rem; font-weight: 700; color: #0f766e; margin: 1rem 0; }
+    #pricing-section .price-tag span { font-size: 0.9rem; color: #64748b; font-weight: 400; }
+  </style>
+  <section id="pricing-section">
+    <div class="container">
+      <h2 class="heading">Kadar Harga</h2>
+      <p class="lead">Pilih unit pilihan dan terus buat semakan tarikh.</p>
+      <div class="grid-2">
+        <div class="price-card">
+          <h3>Seri Warisan</h3>
+          <div class="price-tag">RM250 <span>/ malam</span></div>
+          <p style="color: #64748b; margin-bottom: 1.5rem;">Kapasiti: 6 Tetamu </p>
+          <button class="btn" style="width: 100%;" onclick="selectRoom('Seri Warisan', 250)">Tempah</button>
+        </div>
+        <div class="price-card">
+          <h3>Seri Lagenda</h3>
+          <div class="price-tag">RM200 <span>/ malam</span></div>
+          <p style="color: #64748b; margin-bottom: 1.5rem;">Kapasiti: 4 Tetamu </p>
+          <button class="btn" style="width: 100%;" onclick="selectRoom('Seri Lagenda', 200)">Tempah</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= TESTIMONIALS SECTION ================= -->
+  <style>
+    #testi-section { padding: 80px 0; background-color: #ffffff; }
+    #testi-section .review-card { background: #f8fafc; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; }
+    #testi-section .stars { color: #f59e0b; margin-bottom: 0.5rem; }
+  </style>
+  <section id="testi-section">
+    <div class="container">
+      <h2 class="heading">Apa Kata Tetamu Kami?</h2>
+      <p class="lead">Pengalaman tetamu yang pernah menginap bersama kami.</p>
+      <div class="grid-3">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.95rem;">“rumah kemas dan view sangat cantik!! rasa sangat tenang bila bercuti di kampung dan merasai suasana kampung”</p>
+          <small style="color: #64748b; display: block; margin-top: 1rem;">- Raihan, KL</small>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.95rem;">“Beautiful view and comfortable house”</p>
+          <small style="color: #64748b; display: block; margin-top: 1rem;">- Jamsiah, Kedah</small>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.95rem;">“Perfect place for family gatherings, will come again!”</p>
+          <small style="color: #64748b; display: block; margin-top: 1rem;">- Tan, Singapore</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT & BOOKING SECTION ================= -->
+<!-- ================= CONTACT & BOOKING SECTION ================= -->
+  <style>
+    #contact-section { padding: 80px 0; }
+    #contact-section .form-container { background: #ffffff; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+    #contact-section .form-group { margin-bottom: 1.2rem; }
+    #contact-section label { display: block; font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 0.3rem; }
+    #contact-section .input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 0.95rem; outline: none; }
+    #contact-section .input:focus { border-color: #0f766e; }
+    #contact-section .form-row { display: flex; gap: 1rem; }
+    #contact-section .form-row > div { flex: 1; }
+    #contact-section .map-box { display: flex; flex-direction: column; gap: 1rem; }
+    #contact-section iframe { width: 100%; height: 100%; min-height: 320px; border-radius: 12px; border: none; }
+    #contact-section .address-card { background: #ffffff; padding: 1.2rem; border-radius: 12px; border: 1px solid #cbd5e1; font-size: 0.9rem; color: #475569; display: flex; gap: 10px; align-items: flex-start; }
+    #contact-section .address-card i { color: #0f766e; font-size: 1.2rem; margin-top: 3px; }
+    @media (max-width: 768px) { #contact-section .form-row { flex-direction: column; } }
+  </style>
+  <section id="contact-section">
+    <div class="container grid-2">
+      <div class="form-container">
+        <h2 class="heading" style="text-align: left; margin-bottom: 1rem;">Semak Kekosongan</h2>
+        
+        <form id="bookingForm">
+          <div class="form-group">
+            <label>Pilihan Villa</label>
+            <input type="text" id="selectedRoom" class="input" readonly placeholder="Sila tekan Tempah di bahagian Kadar Harga">
+          </div>
+          <div class="form-group">
+            <label>Nama Anda</label>
+            <input type="text" id="guestName" class="input" placeholder="Nama anda" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Tarikh Masuk</label>
+              <input type="date" id="checkInDate" class="input" required onchange="calculateTotal()">
+            </div>
+            <div class="form-group">
+              <label>Tarikh Keluar</label>
+              <input type="date" id="checkOutDate" class="input" required onchange="calculateTotal()">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Nota</label>
+            <textarea id="guestNote" class="input" rows="3" placeholder="Bilangan tetamu atau permintaan khas?"></textarea>
+          </div>
+          
+          <div id="priceEstimate" style="margin-bottom: 1rem; font-weight: 600; color: #0f766e;"></div>
+
+          <button type="button" class="btn" style="width: 100%;" onclick="validateAndSend()">Semak & Tempah</button>
+        </form>
+      </div>
+
+      <div class="map-box">
+        <div class="address-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong style="color: #1e293b;">Alamat Homestay:</strong><br>
+            Lot 2625, Batu 10, Kampung 1/2, Jln Pantai, Sungai Burung, 34250 Tanjung Piandang, Perak
+          </div>
+        </div>
+        
+        <iframe 
+          src="https://maps.google.com/maps?q=Lot%202625%2C%20Batu%2010%2C%20Kampung%201%2F2%2C%20Jln%20Pantai%2C%20Sungai%20Burung%2C%2034250%20Tanjung%20Piandang%2C%20Perak&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script Logik Tempahan untuk Contact Section -->
+  <script>
+    let roomRate = 0;
+
+    function selectRoom(roomName, price) {
+      document.getElementById('selectedRoom').value = roomName;
+      roomRate = price;
+      calculateTotal();
+      document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function calculateTotal() {
+      const checkIn = document.getElementById('checkInDate').value;
+      const checkOut = document.getElementById('checkOutDate').value;
+      const priceDisplay = document.getElementById('priceEstimate');
+
+      if (checkIn && checkOut && roomRate > 0) {
+        const start = new Date(checkIn);
+        const end = new Date(checkOut);
+        const diffDays = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+
+        if (diffDays > 0) {
+          const total = diffDays * roomRate;
+          priceDisplay.innerText = `Anggaran Total (${diffDays} malam): RM${total}`;
+        } else {
+          priceDisplay.innerText = '';
+        }
+      }
+    }
+
+    function validateAndSend() {
+      const room = document.getElementById('selectedRoom').value;
+      const name = document.getElementById('guestName').value;
+      const checkIn = document.getElementById('checkInDate').value;
+      const checkOut = document.getElementById('checkOutDate').value;
+      const note = document.getElementById('guestNote').value;
+      
+      if(!room || !name || !checkIn || !checkOut) {
+        alert("Sila pilih bilik dan isi tarikh tempahan!");
+        return;
+      }
+
+      if(new Date(checkIn) >= new Date(checkOut)) {
+        alert("Tarikh Check-out mestilah selepas tarikh Check-in!");
+        return;
+      }
+
+      alert("Terima Kasih! Tekan 'OK' untuk ke WhatsApp.");
+
+      const ownerPhone = "60137142324";
+      const message = `Salam Sri Warisan, saya ingin bertanyakan kekosongan untuk:%0A%0A` + 
+                      `*Room:* ${room}%0A` +
+                      `*Name:* ${name}%0A` +
+                      `*Check-in:* ${checkIn}%0A` +
+                      `*Check-out:* ${checkOut}%0A` +
+                      `*Notes:* ${note}%0A%0A` +
+                      `Masih ada kekosongan?`;
+
+      window.open(`https://wa.me/${ownerPhone}?text=${message}`, '_blank');
+    }
+  </script>
+
+
+  <!-- ================= FOOTER SECTION ================= -->
+  <style>
+    #footer-section { background: #1e293b; color: #ffffff; padding: 30px 0; text-align: center; font-size: 0.9rem; }
+    #footer-section .brand { display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 0.5rem; }
+    #footer-section img { height: 30px; border-radius: 4px; }
+  </style>
+  <footer id="footer-section">
+    <div class="container">
+      <div class="brand">
+        <img src="logo homestay.png" alt="logo">
+        <span>Sri Warisan Ban Pecah</span>
+      </div>
+      <div>© 2026 Sri Warisan Ban Pecah Homestay. All rights reserved.</div>
+    </div>
+  </footer>
+
+
+  <!-- ================= BACK TO TOP SECTION ================= -->
+  <style>
+    #backToTop { position: fixed; bottom: 20px; right: 20px; background: #0f766e; color: #fff; border: none; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; display: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.2rem; z-index: 999; }
+  </style>
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  <script>
+    let topBtn = document.getElementById("backToTop");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
